@@ -24,6 +24,12 @@ TSP::TSP(std::string filename) {
         }
     }
     project.close();
+    
+    totalDistance = calculateDistance();
+}
+
+TSP::TSP(int numCities) {
+    this->numCities = numCities;
 }
 
 void TSP::addCity(std::string name, int x, int y) {
@@ -41,9 +47,33 @@ double TSP::calculateDistance() {
         result += stepDist;
         i++;
     }
-    totalDistance = result;
     return result;
 }
+
+void TSP::mutate() {
+    int index1 = rand() % numCities;
+    int index2 = rand() % numCities;
+    while (index2 == index1) {
+        index2 = rand() % numCities;
+    }
+    
+    double newDistance = calculateAfterSwap(index1, index2);
+    
+}
+
+double TSP::calculateAfterSwap(int index1, int index2) {
+    City tempCity = path[index1];
+    path[index1] = path[index2];
+    path[index2] = tempCity;
+    
+    double result = calculateDistance();
+    
+    // swap back
+    path[index2] = path[index1];
+    path[index1] = tempCity;
+    return result;
+}
+
 
 void TSP::printTSP() {
     for (int i = 0; i < numCities; ++i) {

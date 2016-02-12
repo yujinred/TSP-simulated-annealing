@@ -4,6 +4,13 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TSP-simulated-annealing-Test.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TSP-simulated-annealing.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +20,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>5167508A1C6D4D8700AEC6F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>516750AB1C6D652300AEC6F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

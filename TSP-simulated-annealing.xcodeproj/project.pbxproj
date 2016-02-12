@@ -8,10 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		5167508F1C6D4D8800AEC6F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5167508E1C6D4D8800AEC6F7 /* main.cpp */; };
+		516750981C6D4EB100AEC6F7 /* TSP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516750961C6D4EB100AEC6F7 /* TSP.cpp */; };
+		5167509B1C6D502400AEC6F7 /* City.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516750991C6D502400AEC6F7 /* City.cpp */; };
+		516750B31C6D653800AEC6F7 /* TSPTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5167509F1C6D539000AEC6F7 /* TSPTest.cpp */; };
+		516750B41C6D653800AEC6F7 /* TSP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516750961C6D4EB100AEC6F7 /* TSP.cpp */; };
+		516750B51C6D653800AEC6F7 /* City.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516750991C6D502400AEC6F7 /* City.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		516750891C6D4D8700AEC6F7 /* CopyFiles */ = {
+		516750891C6D4D8700AEC6F7 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		516750AA1C6D652300AEC6F7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +40,24 @@
 /* Begin PBXFileReference section */
 		5167508B1C6D4D8800AEC6F7 /* TSP-simulated-annealing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TSP-simulated-annealing"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5167508E1C6D4D8800AEC6F7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		516750951C6D4DD100AEC6F7 /* randTSP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = randTSP; sourceTree = SOURCE_ROOT; };
+		516750961C6D4EB100AEC6F7 /* TSP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TSP.cpp; sourceTree = "<group>"; };
+		516750971C6D4EB100AEC6F7 /* TSP.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TSP.hpp; sourceTree = "<group>"; };
+		516750991C6D502400AEC6F7 /* City.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = City.cpp; sourceTree = "<group>"; };
+		5167509A1C6D502400AEC6F7 /* City.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = City.hpp; sourceTree = "<group>"; };
+		5167509F1C6D539000AEC6F7 /* TSPTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TSPTest.cpp; sourceTree = "<group>"; };
+		516750AC1C6D652300AEC6F7 /* TSP-simulated-annealing-Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TSP-simulated-annealing-Test"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		516750881C6D4D8700AEC6F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		516750A91C6D652300AEC6F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				5167508B1C6D4D8800AEC6F7 /* TSP-simulated-annealing */,
+				516750AC1C6D652300AEC6F7 /* TSP-simulated-annealing-Test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +87,39 @@
 		5167508D1C6D4D8800AEC6F7 /* TSP-simulated-annealing */ = {
 			isa = PBXGroup;
 			children = (
+				5167509E1C6D535800AEC6F7 /* unitTest */,
+				5167509C1C6D508A00AEC6F7 /* include */,
+				5167509D1C6D50F200AEC6F7 /* lib */,
 				5167508E1C6D4D8800AEC6F7 /* main.cpp */,
+				516750951C6D4DD100AEC6F7 /* randTSP */,
 			);
 			path = "TSP-simulated-annealing";
+			sourceTree = "<group>";
+		};
+		5167509C1C6D508A00AEC6F7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5167509A1C6D502400AEC6F7 /* City.hpp */,
+				516750971C6D4EB100AEC6F7 /* TSP.hpp */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		5167509D1C6D50F200AEC6F7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				516750961C6D4EB100AEC6F7 /* TSP.cpp */,
+				516750991C6D502400AEC6F7 /* City.cpp */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		5167509E1C6D535800AEC6F7 /* unitTest */ = {
+			isa = PBXGroup;
+			children = (
+				5167509F1C6D539000AEC6F7 /* TSPTest.cpp */,
+			);
+			name = unitTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,7 +131,7 @@
 			buildPhases = (
 				516750871C6D4D8700AEC6F7 /* Sources */,
 				516750881C6D4D8700AEC6F7 /* Frameworks */,
-				516750891C6D4D8700AEC6F7 /* CopyFiles */,
+				516750891C6D4D8700AEC6F7 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -80,6 +140,23 @@
 			name = "TSP-simulated-annealing";
 			productName = "TSP-simulated-annealing";
 			productReference = 5167508B1C6D4D8800AEC6F7 /* TSP-simulated-annealing */;
+			productType = "com.apple.product-type.tool";
+		};
+		516750AB1C6D652300AEC6F7 /* TSP-simulated-annealing-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 516750B01C6D652300AEC6F7 /* Build configuration list for PBXNativeTarget "TSP-simulated-annealing-Test" */;
+			buildPhases = (
+				516750A81C6D652300AEC6F7 /* Sources */,
+				516750A91C6D652300AEC6F7 /* Frameworks */,
+				516750AA1C6D652300AEC6F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TSP-simulated-annealing-Test";
+			productName = "TSP-simulated-annealing-Test";
+			productReference = 516750AC1C6D652300AEC6F7 /* TSP-simulated-annealing-Test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -92,6 +169,9 @@
 				ORGANIZATIONNAME = "Eugene Zhang";
 				TargetAttributes = {
 					5167508A1C6D4D8700AEC6F7 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					516750AB1C6D652300AEC6F7 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -109,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				5167508A1C6D4D8700AEC6F7 /* TSP-simulated-annealing */,
+				516750AB1C6D652300AEC6F7 /* TSP-simulated-annealing-Test */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +199,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5167509B1C6D502400AEC6F7 /* City.cpp in Sources */,
 				5167508F1C6D4D8800AEC6F7 /* main.cpp in Sources */,
+				516750981C6D4EB100AEC6F7 /* TSP.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		516750A81C6D652300AEC6F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516750B31C6D653800AEC6F7 /* TSPTest.cpp in Sources */,
+				516750B41C6D653800AEC6F7 /* TSP.cpp in Sources */,
+				516750B51C6D653800AEC6F7 /* City.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +311,20 @@
 			};
 			name = Release;
 		};
+		516750B11C6D652300AEC6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		516750B21C6D652300AEC6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -235,6 +342,15 @@
 			buildConfigurations = (
 				516750931C6D4D8800AEC6F7 /* Debug */,
 				516750941C6D4D8800AEC6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		516750B01C6D652300AEC6F7 /* Build configuration list for PBXNativeTarget "TSP-simulated-annealing-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				516750B11C6D652300AEC6F7 /* Debug */,
+				516750B21C6D652300AEC6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

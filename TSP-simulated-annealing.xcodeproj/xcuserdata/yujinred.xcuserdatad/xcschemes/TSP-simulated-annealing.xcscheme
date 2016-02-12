@@ -38,6 +38,13 @@
             ReferencedContainer = "container:TSP-simulated-annealing.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "DYLD_FRAMEWORK_PATH"
+            value = "/Users/yujinred/Desktop"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,6 +68,13 @@
             ReferencedContainer = "container:TSP-simulated-annealing.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "DYLD_FRAMEWORK_PATH"
+            value = "/Users/yujinred/Desktop"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
