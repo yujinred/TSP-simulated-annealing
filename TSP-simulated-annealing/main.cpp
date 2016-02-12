@@ -7,9 +7,11 @@
 //
 
 #include <iostream>
+#include "TSP.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    TSP problem("randTSP/instance_1.txt");
     return 0;
 }
