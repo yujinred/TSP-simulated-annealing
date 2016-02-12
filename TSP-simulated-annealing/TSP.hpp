@@ -18,6 +18,8 @@ class TSP {
     int numCities;
     std::vector<City> path;
     double totalDistance;
+    double temperature;
+    double tempCounter;
     
 public:
     TSP(std::string);
@@ -31,8 +33,16 @@ public:
     // change a path and see if we're improved our outcome
     void mutate();
     
+    void swapCities(int, int);
+    
     // calculate the new distance after swapping two path
     double calculateAfterSwap(int, int);
+    
+    // function to control temperature
+    void annealingSchedule();
+    
+    // run the simulated annealing on this TSP
+    void runAnnealing();
     
     void printTSP();
     

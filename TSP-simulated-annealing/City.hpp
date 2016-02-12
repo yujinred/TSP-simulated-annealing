@@ -20,6 +20,7 @@ public:
     City(std::string, int, int);
     int getX();
     int getY();
+    std::string getName();
     
 };
 

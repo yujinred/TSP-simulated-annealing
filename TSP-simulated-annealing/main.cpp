@@ -10,8 +10,8 @@
 #include "TSP.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    TSP problem("randTSP/instance_1.txt");
+    // replace the file path to try other files
+    TSP problem("randTSP/problem36");
+    problem.runAnnealing();
     return 0;
 }

@@ -8,7 +8,6 @@
 
 #include "City.hpp"
 #include <math.h>
-#include <iostream>
 using namespace std;
 
 City::City(string name, int x, int y) {
@@ -30,4 +29,8 @@ int City::getX() {
 
 int City::getY() {
     return y;
+}
+
+string City::getName() {
+    return name;
 }

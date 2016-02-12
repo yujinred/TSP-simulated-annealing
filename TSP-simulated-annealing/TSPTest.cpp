@@ -81,10 +81,12 @@ void testSwapDistance() {
 }
 
 int main() {
-    TSP testTSP("/Users/yujinred/Winter 2016/CS 486/A2/TSP-simulated-annealing/randTSP/5/instance_1.txt");
+    srand((unsigned)time(0));
+    TSP testTSP("/Users/yujinred/Winter 2016/CS 486/A2/TSP-simulated-annealing/randTSP/problem36");
     testTSP.printTSP();
     testDistanceTo();
     testSwapDistance();
     testResult();
+    testTSP.runAnnealing();
     return 0;
 }
